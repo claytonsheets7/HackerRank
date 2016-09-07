@@ -6,6 +6,22 @@ import java.util.Iterator;
 import java.util.Map;
 
 public class StringAlgorithms {
+	
+	Set<String> permutations = new HashSet<String>();
+	
+	Set<String> generatePermutations(String s) {
+		generatePermutations(s, "", 0);
+		return permutations;
+	}
+	
+	void generatePermutations(String original, String perm, int startIndex) {
+		permutations.add(perm);
+		for(int i = startIndex; i < original.length(); i++) {
+			String nextPerm = perm + original.charAt(startIndex);
+			System.out.println(nextPerm);
+			generatePermutations(original, nextPerm, startIndex += 1);
+		}
+	}
 
 	static int anagramaticPairs(String s) {
 		Map<String, Integer> substrings = new HashMap<String, Integer>();
