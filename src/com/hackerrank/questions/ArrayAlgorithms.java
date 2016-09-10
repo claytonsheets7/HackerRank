@@ -1,22 +1,6 @@
 package com.hackerrank.questions;
 
 public class ArrayAlgorithms {
-	
-	int uniqueInts(int[] arr1, int[] arr2) {
-		int uniqueInts = arr1.length + arr2.length;
-		
-		for(int i = 0; i < arr1.length; i++) {
-			for(int j = 0; j < arr2.length; j++) {
-				if(arr1[i] == arr2[j]) {
-					arr1[i] = Integer.MIN_VALUE;
-					arr2[j] = Integer.MIN_VALUE;
-					uniqueInts -= 2;
-					break;
-				}
-			}
-		}
-		return uniqueInts;
-	}
 
 	/*
 	 * Tom has a collection of blu-ray discs from volume 1 to n. He is missing
