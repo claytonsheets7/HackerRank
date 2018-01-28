@@ -7,6 +7,7 @@ import java.util.Map;
 
 public class StringAlgorithms {
 	
+	
 	Set<String> permutations = new HashSet<String>();
 	
 	Set<String> generatePermutations(String s) {
