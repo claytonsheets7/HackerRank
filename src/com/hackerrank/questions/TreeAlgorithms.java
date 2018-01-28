@@ -13,6 +13,7 @@ public class TreeAlgorithms {
 		}
 		return checkBSTHelper(root, Integer.MAX_VALUE, Integer.MIN_VALUE);
 	}
+	
 
 	public boolean checkBSTHelper(Node root, int rightMax, int leftMin) {
 		if (valuesSeen.contains(root.data)) {
