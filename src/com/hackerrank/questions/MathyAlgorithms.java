@@ -5,6 +5,7 @@ import java.util.List;
 
 public class MathyAlgorithms {
 	
+	
 	int stringToInteger(String s) throws NumberFormatException {
 		if(!s.matches("[0-9]+")) {
 			throw new NumberFormatException("Input may only contain integers.");
